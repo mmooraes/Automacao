@@ -2,7 +2,7 @@ import pyautogui
 import pyautogui
 from time import sleep
 
-repeticoes = 2                                                                                   
+repeticoes = 1                                                                                  
 
 pyautogui.PAUSE = 0.5
 
@@ -16,7 +16,7 @@ for i in range(repeticoes):
     else:
         tabs_iniciais = 42
     
-    pyautogui.press('tab', presses=41, interval=0.01) 
+    pyautogui.press('tab', presses=tabs_iniciais, interval=0.01) 
     pyautogui.press('enter')
 
     sleep(1)
@@ -30,10 +30,13 @@ for i in range(repeticoes):
     sleep(0.2)
     pyautogui.press('enter')
 
-    sleep(2) 
-    
-    """
+    sleep(1) 
 
+    pyautogui.press(['alt','left']) 
+    pyautogui.press('enter')
+
+    sleep(2) 
+    """
     pyautogui.press('tab', presses=41, interval=0.01) 
     pyautogui.press('enter')
 
