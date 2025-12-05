@@ -7,8 +7,6 @@ pyautogui.PAUSE = 0.5
 
 pyautogui.hotkey('alt', 'tab') 
 sleep(1) 
-
-
 for i in range(repeticoes):
     print(f"Executando ciclo {i + 1}...")
 
