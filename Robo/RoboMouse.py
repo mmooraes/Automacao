@@ -1,22 +1,36 @@
 import pyautogui
 from time import sleep
 
+repeticoes = 7                                                                                    
 
 pyautogui.PAUSE = 0.5 
 
 pyautogui.hotkey('alt', 'tab') 
 sleep(1) 
 
-pyautogui.press('tab', presses=38, interval=0.01) 
-pyautogui.press('enter')
 
-sleep(1)
+for i in range(repeticoes):
+    print(f"Executando ciclo {i + 1}...")
 
-pyautogui.press('tab', presses=14, interval=0.01)
-pyautogui.press('enter')
+    if i == 0:
+        tabs_iniciais = 38
+    else:
+        tabs_iniciais = 39
+    
+    pyautogui.press('tab', presses=tabs_iniciais, interval=0.01) 
+    pyautogui.press('enter')
 
-sleep(1.5)
+    sleep(1)
 
-pyautogui.press('tab', presses=3, interval=0.1)
-sleep(1)
-pyautogui.press('enter')
+    pyautogui.press('tab', presses=14, interval=0.01)
+    pyautogui.press('enter')
+
+    sleep(1)
+
+    pyautogui.press('tab', presses=3, interval=0.1)
+    sleep(0.1)
+    pyautogui.press('enter')
+    
+    sleep(1) 
+
+print("Automação finalizada!")
