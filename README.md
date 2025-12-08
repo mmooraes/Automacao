@@ -67,5 +67,4 @@ Como este RPA assume o controle dos periféricos (mouse e teclado), foi implemen
 
 * **Parada de Emergência:** Se precisar interromper o script imediatamente, mova o cursor do mouse **bruscamente para qualquer um dos quatro cantos da tela**.
 * Isso acionará uma exceção `FailSafeException`, parando a execução na hora.
-
-pip install pyautogui
+* 
