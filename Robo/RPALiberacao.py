@@ -27,9 +27,11 @@ for i in range(repeticoes):
     sleep(1)
 
     pyautogui.press('tab', presses=3, interval=0.1)
-    sleep(0.1)
-    pyautogui.press('enter')
     
+    sleep(0.1)
+
+    pyautogui.press('enter')
+
     sleep(1) 
 
 print("Automação finalizada!")
