@@ -30,5 +30,41 @@ Este projeto consiste em um script de **RPA (Robotic Process Automation)** desen
 
 Certifique-se de ter o Python instalado e instale a dependência do projeto:
 
-```bash
-pip install pyautogui
+## 🚀 Como Executar
+
+Para garantir o funcionamento correto do script, siga a ordem abaixo:
+
+1.  **Prepare o Ambiente:** Abra o sistema ou navegador onde a tarefa será realizada e deixe-o na tela inicial do processo.
+2.  **Posicione as Janelas:**
+    * Vá para o seu editor de código (VS Code, Terminal, etc).
+    * *Atenção:* O script executa um `Alt + Tab` logo no início. Certifique-se de que a **última janela acessada** antes de ir para o código foi a do sistema alvo.
+3.  **Execute o Script:**
+    No terminal, rode o comando:
+    ```bash
+    python nome_do_script.py
+    ```
+4.  **Aguarde:** Não mexa no mouse ou teclado enquanto o script estiver rodando para evitar interferência nos comandos.
+
+## 🔧 Personalização
+
+Você pode adaptar o comportamento do robô alterando as variáveis no início do arquivo `nome_do_script.py`:
+
+* **Definir quantidade de execuções:**
+    Altere a variável `repeticoes` para o número exato de documentos que deseja processar no lote atual.
+    ```python
+    repeticoes = 7  # Ex: Troque para 50 se tiver 50 documentos
+    ```
+
+* **Ajustar velocidade:**
+    Se o sistema estiver lento, aumente o `pyautogui.PAUSE` ou os tempos de `sleep()` para evitar que o robô "atropele" o carregamento da página.
+    ```python
+    pyautogui.PAUSE = 0.5  # Tempo de espera padrão entre cada comando
+    ```
+
+## ⚠️ Cuidados (Fail-Safe)
+
+Como este RPA assume o controle dos periféricos (mouse e teclado), foi implementado o recurso de segurança nativo da biblioteca PyAutoGUI:
+
+* **Parada de Emergência:** Se precisar interromper o script imediatamente, mova o cursor do mouse **bruscamente para qualquer um dos quatro cantos da tela**.
+* Isso acionará uma exceção `FailSafeException`, parando a execução na hora.
+* 
