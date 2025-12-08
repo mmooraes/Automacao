@@ -36,6 +36,10 @@ for i in range(repeticoes):
     pyautogui.press('enter')
 
     sleep(2) 
+    
+    #ate o momento, desenvolvi para ele realizar o fechamento dos relatórios, vou começar a trabalhar para ele baixar
+
+
     """
     pyautogui.press('tab', presses=41, interval=0.01) 
     pyautogui.press('enter')
