@@ -1,5 +1,7 @@
 # 🤖 RPA para Automação de Liberação de Documentação
 
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+
 > Automação desenvolvida em Python para eliminar tarefas manuais repetitivas na liberação de documentações, reduzindo aproximadamente 1800 cliques por operação.
 
 ## 📄 Sobre o Projeto
