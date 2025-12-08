@@ -1,6 +1,6 @@
 # 🤖 RPA para Automação de Liberação de Documentação
 
-> Automação desenvolvida em Python para eliminar tarefas manuais repetitivas na liberação de documentações, reduzindo aproximadamente 400 ações manuais por ciclo.
+> Automação desenvolvida em Python para eliminar tarefas manuais repetitivas na liberação de documentações, reduzindo aproximadamente 1800 cliques por operação.
 
 ## 📄 Sobre o Projeto
 
