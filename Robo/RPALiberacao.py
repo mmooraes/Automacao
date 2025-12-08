@@ -2,7 +2,7 @@ import pyautogui
 from time import sleep
 
 #Colocar a quantidade de reptições
-repeticoes = 7                                                                                    
+repeticoes = 1                                                                              
 
 pyautogui.PAUSE = 0.5 
 
@@ -27,7 +27,7 @@ for i in range(repeticoes):
     sleep(1)
 
     pyautogui.press('tab', presses=3, interval=0.1)
-    
+
     sleep(0.1)
 
     pyautogui.press('enter')
