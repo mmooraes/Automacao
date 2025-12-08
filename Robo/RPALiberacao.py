@@ -1,6 +1,7 @@
 import pyautogui
 from time import sleep
 
+#Colocar a quantidade de reptições
 repeticoes = 7                                                                                    
 
 pyautogui.PAUSE = 0.5 
